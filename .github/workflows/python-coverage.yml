@@ -7,7 +7,7 @@ on:
 
 permissions:
   pull-requests: write
-  jobs:
+jobs:
   python-coverage:
     runs-on: ubuntu-latest
 
@@ -36,4 +36,4 @@ permissions:
 
 - name: Fail if below threshold
   run: coverage report --fail-under=90
-    
+
